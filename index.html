@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pallavi Prabhakar</title>
+  <meta name="description" content="Postdoctoral Research Fellow at the Stockholm School of Economics. Economist studying how economic frictions shape the effectiveness of public programmes.">
+  <meta name="author" content="Pallavi Prabhakar">
+  <meta name="theme-color" content="#1a2f6b">
+  <meta property="og:title" content="Pallavi Prabhakar">
+  <meta property="og:description" content="Postdoctoral Research Fellow at the Stockholm School of Economics. Economist studying how economic frictions shape the effectiveness of public programmes.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://pallaviprabhak.github.io/">
+  <meta property="og:image" content="https://pallaviprabhak.github.io/headshot.jpg">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%231a2f6b'/%3E%3Ctext x='16' y='23.5' font-family='Georgia,serif' font-size='20' font-weight='700' text-anchor='middle' fill='white'%3EP%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap">
+  <style>
+:root {
+  color-scheme: light;
+  --paper: #ffffff;
+  --ink: #181d2b;
+  --muted: #5b6377;
+  --rule: #e2e5ee;
+  --tint: #eef1f8;
+  --accent: #1a2f6b;
+  --accent-ink: #0f1d47;
+  --shadow: 0 1px 2px rgba(15, 29, 71, .12), 0 14px 30px -18px rgba(15, 29, 71, .35);
+  --font: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font);
+  font-size: 0.893rem;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+a { color: var(--accent); text-decoration: none; }
+a:hover { color: var(--accent-ink); text-decoration: underline; text-underline-offset: 3px; text-decoration-thickness: 1px; }
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: 3px;
+}
+
+.page {
+  max-width: 72rem;
+  margin: 0 auto;
+  padding: 3rem 1.5rem 3.5rem;
+  display: grid;
+  grid-template-columns: 15.5rem minmax(0, 46rem);
+  justify-content: center;
+  gap: 4rem;
+  align-items: start;
+}
+
+/* Sidebar */
+.side { position: sticky; top: 3rem; }
+
+.portrait {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  background: var(--tint);
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  margin-bottom: 1.25rem;
+}
+.portrait img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+}
+
+h1 {
+  font-size: 1.875rem;
+  line-height: 1.1;
+  font-weight: 700;
+  letter-spacing: -.015em;
+  margin: 0 0 .55rem;
+}
+.role { margin: 0; line-height: 1.45; }
+.role strong { display: block; font-weight: 700; color: var(--ink); font-size: 0.911rem; }
+.role span { display: block; color: var(--muted); font-size: 0.875rem; }
+
+.btns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+  margin: 1.1rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+.btns a {
+  display: inline-block;
+  padding: .3rem .85rem;
+  border: 1px solid var(--rule);
+  border-radius: 999px;
+  font-size: 0.822rem;
+  line-height: 1.5;
+  transition: border-color .15s ease, background-color .15s ease;
+}
+.btns a:hover {
+  text-decoration: none;
+  border-color: var(--accent);
+  background: var(--tint);
+}
+
+/* Content */
+.content {
+  text-align: justify;
+  text-justify: inter-word;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+}
+
+.bio p { margin: 0 0 .8rem; font-size: 0.938rem; line-height: 1.65; }
+
+h2 {
+  position: relative;
+  font-size: 1.206rem;
+  font-weight: 700;
+  color: var(--accent);
+  margin: 2rem 0 1rem;
+  padding-bottom: .4rem;
+  border-bottom: 1px solid var(--rule);
+}
+h2::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: 2.75rem;
+  height: 2px;
+  background: var(--accent);
+}
+
+h3 {
+  font-size: 0.964rem;
+  font-weight: 700;
+  line-height: 1.35;
+  margin: 0;
+}
+h3 a { color: var(--accent); }
+
+.paper { margin-bottom: 1.15rem; }
+.paper .with {
+  margin: .2rem 0 .3rem;
+  color: var(--muted);
+  font-size: 0.8rem;
+  line-height: 1.55;
+}
+.paper .with a { color: var(--muted); text-decoration: underline; text-decoration-color: var(--rule); text-underline-offset: 3px; }
+.paper .with a:hover { color: var(--accent); text-decoration-color: currentColor; }
+
+.paper .status {
+  margin: 0 0 .25rem;
+  font-size: 0.857rem;
+  font-style: italic;
+  color: var(--accent);
+}
+
+.row { margin: 0; font-size: 0.83rem; color: var(--muted); }
+.row .media + .media { margin-left: .9rem; }
+
+details { display: inline-block; vertical-align: top; margin-right: 1rem; }
+details[open] { display: block; margin: .2rem 0 .45rem; }
+summary { cursor: pointer; color: var(--accent); list-style: none; }
+summary::-webkit-details-marker { display: none; }
+summary::after { content: " +"; }
+details[open] > summary::after { content: " \2212"; }
+summary:hover { text-decoration: underline; text-underline-offset: 3px; }
+details > p {
+  margin: .4rem 0 0;
+  padding-left: .95rem;
+  border-left: 2px solid var(--accent);
+  font-size: 0.857rem;
+  line-height: 1.55;
+  color: var(--ink);
+}
+
+/* justify */
+.bio p, .paper .with, details > p { text-align: justify; text-justify: inter-word; hyphens: auto; -webkit-hyphens: auto; }
+
+@media (max-width: 56rem) {
+  .bio p, .paper .with, details > p { text-align: left; hyphens: manual; -webkit-hyphens: manual; }
+  .content { text-align: left; hyphens: manual; }
+  .page { grid-template-columns: 1fr; gap: 1.5rem; padding-top: 1.5rem; }
+  .side {
+    position: static;
+    display: grid;
+    grid-template-columns: 8.5rem 1fr;
+    column-gap: 1.2rem;
+    align-content: center;
+    align-items: center;
+  }
+  .portrait { grid-row: 1 / span 3; margin-bottom: 0; }
+  h1 { font-size: 1.518rem; margin-bottom: .4rem; }
+  h1, .role, .btns { grid-column: 2; }
+  .btns { margin-top: .7rem; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .btns a { transition: none; }
+}
+  </style>
+</head>
+<body>
+  <main class="page">
+    <aside class="side">
+      <div class="portrait">
+        <img src="headshot.jpg" alt="Portrait of Pallavi Prabhakar" width="900" height="1200">
+      </div>
+      <h1>Pallavi Prabhakar</h1>
+      <p class="role">
+        <strong>Postdoctoral Research Fellow</strong>
+        <span>Department of Economics</span>
+        <span>Stockholm School of Economics</span>
+      </p>
+      <ul class="btns">
+        <li><a href="https://drive.google.com/file/d/1-rJbkj2fKqPGNWdvIDK4ywAZ3JKMbkdf/view">CV</a></li>
+        <li><a href="https://scholar.google.com/citations?user=xZBEfr0AAAAJ&hl=en">Google Scholar</a></li>
+      </ul>
+    </aside>
+
+    <div class="content">
+      <div class="bio">
+        <p>I am a Postdoctoral Research Fellow in the Department of Economics at the Stockholm School of Economics (SSE). I study how economic frictions at the government and household levels shape the effectiveness of public programmes.</p>
+        <p>I am currently affiliated with the <a href="https://www.lrfc.uzh.ch/en/index.html">LRF Center for Economics of Breastfeeding</a>, Department of Economics, University of Zurich and the <a href="https://bigd.bracu.ac.bd/">BRAC Institute of Governance and Development (BIGD)</a>, Dhaka.</p>
+      </div>
+
+      <h2>Working papers</h2>
+
+      <article class="paper">
+        <h3><a href="https://cepr.org/publications/dp20261">(Digital) Cash Transfers, Privacy, and Women's Economic Empowerment</a></h3>
+        <p class="with">with Giulia Greco, <a href="https://sites.google.com/view/selimgulesci/">Selim Gulesci</a>, and <a href="https://bigd.bracu.ac.bd/staffprofile/munshi-sulaiman/">Munshi Sulaiman</a></p>
+        <p class="status">Revise and resubmit, The Economic Journal</p>
+        <p class="row"><span class="media">Media: <a href="https://www.voxdev.org/topic/social-protection/empowerment-or-protection-potential-trade-cash-transfer-design">VoxDev</a>, <a href="https://bigd.bracu.ac.bd/publications/empowerment-or-protection-a-potential-trade-off-in-cash-transfer-design/">BIGD policy brief</a></span></p>
+      </article>
+
+      <article class="paper">
+        <h3><a href="https://drive.google.com/file/d/145QnnkDe3zqj66abukf36tMTOtfHlCHU/view?usp=sharing">Bottom-up Accountability? Information, Expectations and Civic Action in India</a></h3>
+        <p class="with">with <a href="https://www.linkedin.com/in/diwakar-kishore">Diwakar Kishore</a>. <a href="https://www.nhh.no/en/nhh-bulletin/article-archive/2025/november/best-paper-award-the-findings-could-have-a-real-impact/">Best PhD Paper Award, Norwegian Association for Economists, 2025</a></p>
+        <p class="row"><span class="media">Media: <a href="https://blogs.worldbank.org/en/impactevaluations/transparency-without-reach--lessons-from-india-s-largest-transpa">World Bank Development Impact blog</a>, <a href="https://theeconomicmisfit.com/2026/04/24/when-citizens-dont-know-theyre-losing-evidence-from-indias-largest-transparency-programme/">The Economic Misfit</a>, <a href="https://www.nhh.no/en/nhh-bulletin/article-archive/2025/november/best-paper-award-the-findings-could-have-a-real-impact/">NHH Bulletin (English)</a></span></p>
+      </article>
+
+      <article class="paper">
+        <h3><a href="https://kizazikijacho.org/">Cash versus Skills in Early Childhood Development: Evidence from Tanzania</a></h3>
+        <p class="with">with <a href="https://perseus.iies.su.se/~ialm/">Ingvild Almås</a>, <a href="https://economics.yale.edu/people/orazio-attanasio">Orazio Attanasio</a>, Theresa S. Betancourt, Marc H. Bornstein, <a href="https://thrivechildevidence.org/our-team/bet-caeyers/">Bet Caeyers</a>, Ester Elisaria, <a href="https://sites.google.com/view/tillmanneymess">Tillmann Eymess</a>, <a href="https://pamjervis.wixsite.com/home">Pamela Jervis</a>, Honorati Masanja, <a href="https://economics.yale.edu/people/costas-meghir">Costas Meghir</a>, <a href="https://www.cmi.no/staff/charlotte-ringdal">Charlotte Ringdal</a>, and <a href="https://economics.yale.edu/people/bianca-yue">Bianca Yue</a></p>
+        <div class="row">
+          <details>
+            <summary>Abstract</summary>
+            <p>Parenting interventions in low- and middle-income countries rely on intensive training and close supervision of Community Health Workers (CHWs), making them challenging to scale. Moreover, digital cash transfers ease financial constraints but are insufficient to shift parenting behaviors. It remains unclear how to cost-effectively combine these approaches to support holistic Early Childhood Development (ECD) outcomes. We conducted a large-scale RCT in Dodoma, Tanzania, to evaluate the relative effectiveness of three ECD intervention packages delivered during the child's first 1,000 days: (i) a parenting program delivered by CHWs supported by a digital app, (ii) an unconditional digital cash transfer (UCT) program via mobile money, and (iii) a combination of both. We find that after 15 months, parenting support improves home stimulation, parental involvement, and children's socio-emotional development, with effects magnified when paired with digital cash transfers. Digital cash alone improves caregiver mental well-being, household expenditures, and child growth.</p>
+          </details>
+          <span class="media">Media: <a href="https://thrivechildevidence.org/resource-centre/kizazi-kijacho-trial-of-parenting-and-unconditional-cash-transfers-in-tanzania/">Thrive</a>, <a href="https://kizazikijacho.org/assets/pdfs/empowering-tanzania-next-generation-2024.pdf">Policy brief</a></span>
+        </div>
+      </article>
+
+      <article class="paper">
+        <h3><a href="https://thrivechildevidence.org/wp-content/uploads/2025/12/Thrive_working-paper_Tanzania_Cash-transfers-digital-access-and-womens-empowerment.pdf">Targeting meets constraints: Cash transfers, digital access and women's empowerment</a></h3>
+        <p class="with">with <a href="https://perseus.iies.su.se/~ialm/">Ingvild Almås</a> and <a href="https://thrivechildevidence.org/our-team/bet-caeyers/">Bet Caeyers</a></p>
+      </article>
+
+      <h2>Work in progress</h2>
+
+      <article class="paper">
+        <h3>Scarcity and Preference Architecture</h3>
+        <p class="with">with <a href="https://sites.google.com/site/annadreber/">Anna Dreber</a>, <a href="https://www.hss.caltech.edu/people/colin-f-camerer">Colin Camerer</a>, <a href="https://sites.google.com/monash.edu/lata-gangadharan/home">Lata Gangadharan</a>, <a href="https://sites.google.com/view/utteeyodasgupta/home">Utteeyo Dasgupta</a>, and <a href="https://www.linkedin.com/in/andrew-souther-b5b91a19b/">Andrew David Souther</a></p>
+      </article>
+
+      <article class="paper">
+        <h3><a href="https://www.theigc.org/collections/transforming-governance-accountability-information-and-inclusive-growth-indias">Transforming Governance: Accountability and Inclusive Growth in India's Districts</a></h3>
+        <p class="with">with <a href="https://www.linkedin.com/in/diwakar-kishore">Diwakar Kishore</a></p>
+        <div class="row">
+          <details>
+            <summary>Abstract</summary>
+            <p>Public service delivery in low- and middle-income countries is often constrained by weak state capacity and limited accountability. We evaluate India's Aspirational Districts Programme, one of the world's largest policy-monitoring initiatives, which publicly tracks and posts performance data for 112 most underperforming districts to accelerate development. Leveraging administrative data from 6000 Right to Information Requests, national health and education surveys and satellite data, we estimate the program's impact on public service delivery, public financial management, and bureaucratic transfers. Our findings will reveal whether transparency through improved information systems can enhance governance outcomes and close persistent development gaps across poorest regions.</p>
+          </details>
+        </div>
+      </article>
+
+      <article class="paper">
+        <h3>When the Feed Falls Silent: Institutional Frictions in Social Media-Driven Governance</h3>
+        <p class="with">with <a href="https://resuf.github.io/">Resuf Ahmed</a> and <a href="https://akshaymoorthy.net/">Akshay Moorthy</a></p>
+        <div class="row">
+          <details>
+            <summary>Abstract</summary>
+            <p>This paper evaluates how local governments respond to citizen complaints about recurring civic problems, such as monsoon flooding and irregular garbage collection, when those complaints are voiced on social media. Although residents frequently tag municipal authorities in their posts, follow-through is uneven. Some complaints prompt action while others receive little attention. Drawing on administrative records, we trace the path of complaints from online posting to government response and identify the points where action stalls. Our findings will speak to the institutional frictions limiting digital channels' ability to improve urban service delivery accountability.</p>
+          </details>
+        </div>
+      </article>
+    </div>
+  </main>
+</body>
+</html>
